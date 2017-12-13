@@ -1,0 +1,57 @@
+method = GET
+      http://localhost:8080/math/add?n1=1&n2=5
+      {
+        "answer": 6
+      }
+      
+      http://localhost:8080/math/add?n1=-10&n2=-5
+      {
+        "answer": -15
+      }
+      
+      http://localhost:8080/math/add?n1=20&n2=-5
+      {
+        "answer": 15
+      }
+      
+      http://localhost:8080/math/add?n1=-20&n2=20
+      {
+        "answer": 0
+      }
+      
+method = POST
+      http://localhost:8080/math/add
+      
+      input: [{"key":"n1","value":"13","description":""},
+              {"key":"n2","value":"13","description":""}]
+      output: 26
+      
+      
+      input: [{"key":"n1","value":"-30","description":""},
+              {"key":"n2","value":"10","description":""}]
+      output: -20
+      
+      input: [{"key":"n1","value":"-30","description":""},
+              {"key":"n2","value":"-10","description":""}]
+      output: -40
+      
+          
+method = GET
+      http://localhost:8080/time/now
+      
+      {
+        "answer": "Thu Nov 16 10:46:37 MST 2017"
+      }
+      
+      {
+        "answer": "Thu Nov 16 10:57:08 MST 2017"
+      }
+      
+      {
+        "answer": "Thu Nov 16 12:24:33 MST 2017"
+      }
+      
+      
+      
+       
+      
