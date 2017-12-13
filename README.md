@@ -3,13 +3,18 @@
 
 Build a Restful Service written in Java or Groovy with the following endpoints:
 
-1.	GET : http://<server_url>/math/add?n1=<numeric param 1>&n2=<numeric param 2> This should add numbers 1 and 2 and provide the result in JSON
+1.	GET : http://<server_url>/math/add?n1=<numeric param 1>&n2=<numeric param 2> 
+                This should add numbers 1 and 2 and provide the result in JSON
 
-2.	POST : http://<server_url>/math/add (allow for form params 1&2 in a POST body) This should add two numbers from a POST body
+2.	POST : http://<server_url>/math/add (allow for form params 1&2 in a POST body) 
+                This should add two numbers from a POST body
 
-3.	GET : http://<server_url>/time/now This should fetch time for MST at time of call from another service 
+3.	GET : http://<server_url>/time/now 
+                This should fetch time for MST at time of call from another service 
 
-(https://www.developer.aero/WaitTime-API/Try-it-Now for YYC is a free one) and simplify the result to timezone and current time. Return the result or the timestring in a rational JSON document.
+(https://www.developer.aero/WaitTime-API/Try-it-Now 
+for YYC is a free one) and simplify the result to timezone and current time. 
+Return the result or the timestring in a rational JSON document.
 
 The service must be built using the following technologies:
 Spring Boot 
@@ -18,7 +23,7 @@ Gradlew (build)
 
 ====================================== INSTRUCTION
 
-1.	Instructions on how to run it locally:
+Instructions on how to run it locally:
 
         a. The codes perfectly ran in localhost:8080.  Use Postman
               http://localhost:8080/time/now   method = GET
